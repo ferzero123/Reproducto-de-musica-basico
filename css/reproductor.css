@@ -1,0 +1,126 @@
+body {
+  background-color: #0f0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  margin-top: 8%;
+}
+
+.contenedor__fila1 {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor__fila2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor__cover {
+  width: 10%;
+  height: 170px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.contendor__reproducir {
+  width: 10%;
+  position: relative;
+  top: 170px;
+  right: 10%;
+  background-color: aliceblue;
+  height: 40px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.contendor__reproducir:hover {
+  cursor: pointer;
+}
+
+.contenedor__cover:hover {
+  transform: rotateX(5px);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  #Contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+  }
+
+  .contenedor__cover {
+    min-width: 30%;
+    height: 170px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+  }
+
+  .contendor__reproducir {
+    max-width: 100px;
+    position: relative;
+    top: 170px;
+    right: 3.5%;
+    background-color: aliceblue;
+    height: 30px;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .contendor__reproducir:hover {
+    cursor: pointer;
+  }
+
+  .contenedor__cover:hover {
+    transform: rotateX(5px);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  #Contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    min-width: 640px;
+    max-width: 768px;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+  }
+
+  .contenedor__cover {
+    min-width: 30%;
+    height: 170px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+  }
+
+  .contendor__reproducir {
+    max-width: 100px;
+    position: relative;
+    top: 170px;
+    right: 3.5%;
+    background-color: aliceblue;
+    height: 30px;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .contendor__reproducir:hover {
+    cursor: pointer;
+  }
+
+  .contenedor__cover:hover {
+    transform: rotateX(5px);
+    cursor: pointer;
+  }
+}
